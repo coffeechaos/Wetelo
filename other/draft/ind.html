@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+
+
+	</head>
+
+	<body>
+		<header>
+		
+		</header>
+
+		<main>
+			<div class="menu">
+				<div class="menu-open">☰</div>
+					<div class="menu-content">
+						<ul>
+							<li><a href="#1">Item1</a></li>
+							<li><a href="#2">Item2</a></li>
+							<li><a href="#3">Item2</a></li>
+						</ul>
+					<div class="menu-close">☰</div>
+				</div>
+			</div>
+		</main>
+		<style>
+			main {
+			  font-family: Arial, sans-serif;
+			  font-size: 14px;
+			  margin-top: 60px;
+			}
+			.menu-open {
+			  float: left;
+			  cursor: pointer;
+			  font-size: 20px;
+			  font-weight: bold;
+
+			}
+			.menu-close {
+
+			  position: absolute;
+			  cursor: pointer;
+			  top: 10px;
+			  right: 10px;
+			  line-height: 1;
+			}
+			.menu-content {
+				margin-top: 60px;
+				position: fixed;
+				top: 0;
+				left: 0;
+				box-sizing: border-box;
+				width: 200px;
+				height: 100%;
+				transform: translateX(-100%);
+				overflow-y: auto;
+				transition: 0.2s;
+				background: #666;
+			}
+			.menu-opened .menu-content {
+			  transform: none;
+			}
+		</style>
+		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script src="script.js" type="text/javascript"></script>
+	</body>
+</html>

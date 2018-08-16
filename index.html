@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Wetelo</title>
+		<link rel="stylesheet" href="style.css" type="text/css">
+		<link rel="shortcut icon" href="images/cropped-New-Leaf-Recovery.png" type="images/x-icon" class="logo">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<link rel="stylesheet" href="daterangepicker/daterangepicker.css">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+		<link rel="stylesheet" href="css/style.css"> <!-- Gem style -->
+		<script src="js/modernizr.js"></script> <!-- Modernizr -->
+	</head>
+	<body>
+		<header>
+			<!-- <form action="" method="get">
+				<input name="s" placeholder="Enter your text, please..." type="search">
+				<button type="submit"></button>
+			</form> -->
+			<article class="d1">
+			  <form class="search__field" method="get">
+				  <input name="s" type="text" placeholder"Enter your text, please...">
+				  <button type="submit"></button>
+			  </form>
+			</article>
+			<article class="d2">
+				<!-- <form action="#1"><button type="submit" class="Lighting1"></button></form> -->
+				<button type="submit" class="Lighting1"></button>
+				<button type="submit" class="Shape1"></button>
+				<a href="#account" class="Avatar"></a>
+				<!-- <a href="#account2" class="Wetelo_INC_Peter_Stasyuk"></a> -->
+				<button type="submit" class="Shape"></button>
+				<nav class="main-nav">
+					<ul>
+						<!-- inser more links here -->
+						<li><a class="cd-signup" href="#0">Sign in</a></li>
+						<!-- <li><a class="cd-signup" href="#0">Sign up</a></li> -->
+					</ul>
+				</nav>
+				<div class="cd-user-modal"> <!-- this is the entire modal form, including the background -->
+					<div class="cd-user-modal-container"> <!-- this is the container wrapper -->
+						<ul class="cd-switcher">
+							<li><a href="#0">Sign in</a></li>
+							<li><a href="#0">New account</a></li>
+						</ul>
+						<div id="cd-login"> <!-- log in form -->
+							<form class="cd-form">
+								<p class="fieldset">
+									<label class="image-replace cd-email" for="signin-email">E-mail</label>
+									<input class="full-width has-padding has-border" id="signin-email" type="email" placeholder="E-mail">
+									<span class="cd-error-message">Error message here!</span>
+								</p>
+								<p class="fieldset">
+									<label class="image-replace cd-password" for="signin-password">Password</label>
+									<input class="full-width has-padding has-border" id="signin-password" type="text"  placeholder="Password">
+									<a href="#0" class="hide-password">Hide</a>
+									<span class="cd-error-message">Error message here!</span>
+								</p>
+								<p class="fieldset">
+									<input type="checkbox" id="remember-me" checked>
+									<label for="remember-me">Remember me</label>
+								</p>
+								<p class="fieldset">
+									<input class="full-width" type="submit" value="Login">
+								</p>
+							</form>
+							<p class="cd-form-bottom-message"><a href="#0">Forgot your password?</a></p>
+							<!-- <a href="#0" class="cd-close-form">Close</a> -->
+						</div> <!-- cd-login -->
+						<div id="cd-signup"> <!-- sign up form -->
+							<form class="cd-form">
+								<p class="fieldset">
+									<label class="image-replace cd-username" for="signup-username">Username</label>
+									<input class="full-width has-padding has-border" id="signup-username" type="text" placeholder="Username">
+									<span class="cd-error-message">Error message here!</span>
+								</p>
+								<p class="fieldset">
+									<label class="image-replace cd-email" for="signup-email">E-mail</label>
+									<input class="full-width has-padding has-border" id="signup-email" type="email" placeholder="E-mail">
+									<span class="cd-error-message">Error message here!</span>
+								</p>
+								<p class="fieldset">
+									<label class="image-replace cd-password" for="signup-password">Password</label>
+									<input class="full-width has-padding has-border" id="signup-password" type="text"  placeholder="Password">
+									<a href="#0" class="hide-password">Hide</a>
+									<span class="cd-error-message">Error message here!</span>
+								</p>
+								<p class="fieldset">
+									<input type="checkbox" id="accept-terms">
+									<label for="accept-terms">I agree to the <a href="#0">Terms</a></label>
+								</p>
+								<p class="fieldset">
+									<input class="full-width has-padding" type="submit" value="Create account">
+								</p>
+							</form>
+							<!-- <a href="#0" class="cd-close-form">Close</a> -->
+						</div> <!-- cd-signup -->
+						<div id="cd-reset-password"> <!-- reset password form -->
+							<p class="cd-form-message">Lost your password? Please enter your email address. You will receive a link to create a new password.</p>
+
+							<form class="cd-form">
+								<p class="fieldset">
+									<label class="image-replace cd-email" for="reset-email">E-mail</label>
+									<input class="full-width has-padding has-border" id="reset-email" type="email" placeholder="E-mail">
+									<span class="cd-error-message">Error message here!</span>
+								</p>
+
+								<p class="fieldset">
+									<input class="full-width has-padding" type="submit" value="Reset password">
+								</p>
+							</form>
+
+							<p class="cd-form-bottom-message"><a href="#0">Back to log-in</a></p>
+						</div> <!-- cd-reset-password -->
+						<a href="#0" class="cd-close-form">Close</a>
+					</div> <!-- cd-user-modal-container -->
+				</div> <!-- cd-user-modal -->
+			</article>
+		</header>
+		<main>
+			<section class="menu">
+				<div class="menu__open"></div>
+				<article class="menu__content">
+					<div class="sections">
+						<!--<img id="Dashboard" src="images/menu/rocket1.png" alt="">-->
+						<!-- <a href="#dashboard"><li link="#D"class="section" id="Dashboard">Dashboard</li></a> -->
+						<a href="#dashboard"><li link="#D"class="section" id="Dashboard">Dashboard</li></a>
+						<a href="#contacts"><li class="section" id="Contacts">Contacts</li></a>
+						<a href="#products"><li class="section" id="Products">Products</li></a>
+						<a href="#accounting"><li class="section" id="Accounting">Accounting</li></a>
+						<a href="#calendar"><li class="section" id="Calendar">Calendar</li></a>
+						<a href="#reports"><li class="section" id="Reports">Reports</li></a>
+						<a href="#chat"><li class="section" id="Chat">Chat</li></a>
+						<a href="#settings"><li class="section" id="Settings">Settings</li></a>
+					</div>
+					<div class="menu__close"></div>
+					<div class="mini__slider">
+						<div class="line">
+							<div class="title">
+								Tips & News<!-- <br><br/> -->
+								<span class="play__icons">
+									<button type="submit" class="play__left"></button>
+									<button type="submit" class="play__right"></button>
+								</span>
+								<br></br>
+							</div>
+							<!-- <div class="qqq"></div> -->
+							<!-- <div class="slidebuttons"></div>  -->
+						</div>
+						<div class="description">
+							Create a new workflow in your dashboard with ease.<br></br>
+							<!-- <br><br/> -->
+						</div>
+						<div class="description">
+							> Read more
+						</div>
+					</div>
+					<div class="image__menu">
+						<img src="images/menu/rocket_chief.png" alt="">
+					</div>
+					<div class="testcrm">
+						<b>TestCRM</b> - Help Center
+					</div>
+					<div class="license__name">
+						License name - 3GB used of 25GB
+					</div>
+				</article>
+			</section>
+			<article class="sections__hidden">
+				<a href="#dashboard"><li class="section1" id="Dashboard"></li></a>
+				<a href="#contacts"><li class="section1" id="Contacts"></li></a>
+				<a href="#products"><li class="section1" id="Products"></li></a>
+				<a href="#accounting"><li class="section1" id="Accounting"></li></a>
+				<a href="#calendar"><li class="section1" id="Calendar"></li></a>
+				<a href="#reports"><li class="section1" id="Reports"></li></a>
+				<a href="#chat"><li class="section1" id="Chat"></li></a>
+				<a href="#settings"><li class="section1" id="Settings"></li></a>
+			</article>
+			<section class="main__content">
+				<article class="text__block">
+					<div class="text__welcome">
+						<span class="welcome">Welcome aboard, Peter !</span><br></br>
+					</div>
+					<div class="text__description">
+						Did you know that this is a fun fact phrase here or an inspirationnal quote to engage you in a good day and in a good mood, to make better work ! But can also be a news or announce.<a href="#link" class="link1">&emsp;You can see his work at this link.</a><br></br>
+					</div>
+					<div class="text__description2">
+						Interesting isn't it ? Now, let's see what we have to do today.
+					</div>
+				</article>
+				<!-- <ul id="menu">
+					<li><a href="#" onclick="this.className+=' current';">Главная</a></li>
+					<li><a href="#" onclick="this.className+=' current';">FAQ</a></li>
+					<li><a href="#" onclick="this.className+=' current';">Правила</a></li>
+				</ul> -->
+				<article class="to__do">
+					<div class="sections__todo">
+						<a href="Meetings.html" class="section__todo" onclick="this.className+=' current';">Meetings</a>
+						<a href="Notification.html" class="section__todo " >Notifications</a>
+						<a href="index.html" class="section__todo">To-do</a>
+						<a href="#Messages" class="section__todo">Messages</a>
+						<a href="#Favorites__Documents" class="section__todo">Favorites&ensp;Documents</a>
+						<span class="menu__icons">
+							<button type="submit" class="icon1"></button>
+							<button type="submit" class="icon2"></button>
+							<!-- <a href="#>" id="menu2" class="icon1" class="section__todo"></a> -->
+						</span>
+					</div>
+					<div class="sections__tasks">
+					<!-- <div id="Meetings"></div> -->
+					<!-- <div id="Notifications"></div> -->
+					<div id="To-do" class="toodoo">
+						<div class="tasks">
+							<div class="open__tasks">
+								Open Tasks [5 left]
+							</div>
+							<div class="close__tasks">
+								Closed Tasks
+							</div>
+							<!-- <form action="#adding"> -->
+							<button type="submit" class="add__task">
+								+ ADD TASK
+							</button>
+							<!-- </form> -->
+						</div>
+						<hr align="center" width="100%" size="0.5" color="#E9EFF4" />
+						<ul class="list">
+							<ul class="open__task">
+								<li class="open__tasks1">
+									<input type="checkbox" name="radio__task11" id="payt11"><label for="payt11" class="label__radio"></label>
+									<span class="to__do__title">Create new plan</span><br>
+									<span class="to__do__description">Related to iPhone 7s / Deadline 21.09.16</span>
+								</li>
+								<li class="open__tasks1">
+									<input type="checkbox" name="radio__task12" id="payt12"><label for="payt12" class="label__radio"></label>
+									<span class="to__do__title">Integrate online feature</span><br>
+									<span class="to__do__description">Related to Lory White / Deadline 21.09.16</span>
+								</li>
+								<li class="open__tasks1">
+									<input type="checkbox" name="radio__task13" id="payt13"><label for="payt13" class="label__radio"></label>
+									<span class="to__do__title">Build second prototype</span><br>
+									<span class="to__do__description">Related to Hervé Frank / Deadline 21.09.16</span>
+								</li>
+								<li class="open__tasks1">
+									<input type="checkbox" name="radio__task15" id="payt14"><label for="payt14" class="label__radio"></label>
+									<span class="to__do__title">Main page slider</span><br>
+									<span class="to__do__description">No related /Deadline 21.09.16</span>
+								</li>
+								<li class="open__tasks1">
+									<input type="checkbox" name="radio__task15" id="payt15"><label for="payt15" class="label__radio"></label>
+									<span class="task5">Account integration</span><br>
+
+									<span class="to__do__description">No related / Deadline 21.09.16</span>
+									<img	src="images/main__block/attention.png">
+								</li>
+							</ul>
+							<ul class="closed__task">
+								<li class="closed__tasks1">
+									<input type="checkbox" checked name="radio__task24" id="payt24"><label for="payt24" class="label__radio"></label>
+									<span class="to__do__title1">Integrate new fireframe</span><br>
+									<span class="to__do__description">Related to iPhone 7s / Deadline 21.09.16</span>
+								</li>
+								<li class="closed__tasks1">
+									<input type="checkbox" checked name="radio__task23" id="payt23"><label for="payt23" class="label__radio"></label>
+									<span class="to__do__title1">Check all bugs</span><br>
+									<span class="to__do__description">Related to Lory White / Deadline 21.09.16</span>
+								</li>
+									<li class="closed__tasks1">
+									<input type="checkbox" checked name="radio__task22" id="payt22"><label for="payt22" class="label__radio"></label>
+									<span class="to__do__title1">Watch all videos</span><br>
+									<span class="to__do__description">Related to Hervé Frank / Deadline 21.09.16</span>
+								</li>
+								<li class="closed__tasks1">
+									<input type="checkbox" checked name="radio__task21" id="payt21"><label for="payt21" class="label__radio"></label>
+									<span class="to__do__title1">Talk with chief</span><br>
+									<span class="to__do__description">No related /Deadline 21.09.16</span>
+								</li>
+							</ul>
+						</ul>
+						<!-- <div id="Messages"></div> -->
+						<!-- <div id="Favorites__Documents"></div> -->
+					</div>
+				</article>
+				<article class="sales">
+					<div class="sales__header">
+						<div class="sales__title">SALES</div>
+							<button type="submit" class="sales__icon"></button>
+						<hr align="center" width="100%" size="0.5" color="#E9EFF4" />
+						<div class="numbers">
+							<div class="numbers1">
+								<span class="sales__title1">+13%</span><br>
+								<span class="sales__description">compared to last month</span>
+								<span class="sales__border1"></span>
+							</div>
+							<hr  class="border" style="opacity: 0.5; margin-bottom: -9px; margin-top: -9px; border-width: 0 0 0 0.1px; margin-left: 12px; padding-left: 10px; color: #EBEBEB">
+							<!-- <div class="column" ></div> -->
+							<div class="numbers2">
+								<span class="sales__title1">+21%</span><br>
+								<span class="sales__description">of product category sales</span>
+							</div>
+						</div>
+					</div>
+					<hr align="center" width="100%" size="0.5" color="#E9EFF4" opacity="0.5" />
+					<span class="sales__border2"></span>
+					<!-- <div class="gistogramm"> -->
+					<article class="chart-container">
+						<div id="container" style="min-width: 310px; height: 400px; margin: -160px -30px; " data-highcharts-chart="0">
+						<div id="highcharts-iyrlize-0" dir="ltr" class="highcharts-container " style="position: relative; overflow: hidden; width: 100; height: 400px; text-align: left; line-height: normal; z-index: 0; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+						<svg version="1.1" class="highcharts-root" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif;font-size:14px;" xmlns="http://www.w3.org/2000/svg" width="350" height="400">
+						<svg version="1.1" class="highcharts-root" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif;font-size:12px;" xmlns="http://www.w3.org/2000/svg" width="320" height="400">
+							<path fill="none" class="highcharts-axis-line" stroke="#ccd6eb" stroke-width="1" data-z-index="7" d="M 320 322.5 L 90 322.5" color="#989898" opacity="0.4"></path>
+							<g class="highcharts-series-group" data-z-index="3">
+							<g data-z-index="0.1" class="highcharts-series highcharts-series-0 highcharts-column-series highcharts-color-0 highcharts-tracker" transform="translate(74,53) scale(1 1)" clip-path="url(https://www.highcharts.com/demo/column-stacked-percent#highcharts-iyrlize-1)">
+							</g>
+							<g data-z-index="0.1" class="highcharts-markers highcharts-series-0 highcharts-column-series highcharts-color-0 " transform="translate(74,53) scale(1 1)" clip-path="none"></g>
+							<g data-z-index="0.1" class="highcharts-series highcharts-series-1 highcharts-column-series highcharts-color-1 highcharts-tracker" transform="translate(74,53) scale(1 1)" clip-path="url(https://www.highcharts.com/demo/column-stacked-percent#highcharts-iyrlize-1)">
+								1<rect  ry="5" x="24.5" y="208.5" width="26.5" height="32.8" fill="#FFE57F" stroke="#ffffff" stroke-width="1" class="highcharts-point highcharts-color-1";></rect>
+								2<rect  ry="5" x="62" y="192.5" width="26.72" height="47.78" fill="#FFE57F" stroke="#ffffff" stroke-width="1" class="highcharts-point highcharts-color-1"></rect>
+								3<rect ry="5" x="99.5" y="153.5" width="26.72" height="66.09" fill="#FFE57F" stroke="#ffffff" stroke-width="1" class="highcharts-point highcharts-color-1"></rect>
+								4<rect ry="5" x="137" y="177.5" width="26.72" height="52.78" fill="#FFE57F" stroke="#ffffff" stroke-width="1" class="highcharts-point highcharts-color-1"></rect>
+								5<rect ry="5" x="174.5" y="207.5" width="26.72" height="31.97" fill="#FFE57F" stroke="#ffffff" stroke-width="1" class="highcharts-point highcharts-color-1"></rect>
+								6<rect ry="5" x="212" y="202.5" width="26.72" height="36.96" fill="#FFE57F" stroke="#ffffff" stroke-width="1" class="highcharts-point highcharts-color-1"></rect>
+							</g>
+							<g data-z-index="0.1" class="highcharts-markers highcharts-series-1 highcharts-column-series highcharts-color-1 " transform="translate(74,53) scale(1 1)" clip-path="none"></g>
+							<g data-z-index="0.1" class="highcharts-series highcharts-series-2 highcharts-column-series highcharts-color-2 highcharts-tracker" transform="translate(74,53) scale(1 1)" clip-path="url(https://www.highcharts.com/demo/column-stacked-percent#highcharts-iyrlize-1)">
+								1<rect x="24.5" y="238.5" width="26.72" height="31.63" fill="#FFD012" stroke="#ffffff" stroke-width="1" class="highcharts-point highcharts-color-2"></rect>
+								2<rect x="62" y="238.5" width="26.72" height="31.63" fill="#FFD012" stroke="#ffffff" stroke-width="1" class="highcharts-point highcharts-color-2" ></rect>
+								3<rect x="99.5" y="217.5" width="26.72" height="52.44" fill="#FFD012" stroke="#ffffff" stroke-width="1" class="highcharts-point highcharts-color-2"></rect>
+								4<rect x="137" y="228.5" width="26.72" height="40.79" fill="#FFD012" stroke="#ffffff" stroke-width="1" class="highcharts-point highcharts-color-2"></rect>
+								5<rect x="174.5" y="237.5" width="26.72" height="31.63" fill="#FFD012" stroke="#ffffff" stroke-width="1" class="highcharts-point highcharts-color-2"></rect>
+								6<rect x="212" y="237.5" width="26.72" height="31.63" fill="#FFD012" stroke="#ffffff" stroke-width="1" class="highcharts-point highcharts-color-2"></rect>
+							</g>
+								<g data-z-index="0.1" class="highcharts-markers highcharts-series-2 highcharts-column-series highcharts-color-2 " transform="translate(74,53) scale(1 1)" clip-path="none"></g>
+							</g>
+							<g class="highcharts-legend" data-z-index="7" transform="translate(474,356)"><rect fill="none" class="highcharts-legend-box" rx="0" ry="0" x="0" y="0" width="198" height="29" visibility="visible"></rect><g data-z-index="1"></g>
+									<g class="highcharts-legend-item highcharts-column-series highcharts-color-0 highcharts-series-0" data-z-index="1" transform="translate(8,3)">
+								</g></g></g></g>
+							<g class="highcharts-axis-labels highcharts-xaxis-labels " data-z-index="7">
+								<text x="112.3" style="color:#666666;cursor:default;font-size:11px;fill:#989898;" text-anchor="middle" transform="translate(0,0)" y="341" opacity="1">May</text>
+								<text x="148" style="color:#666666;cursor:default;font-size:11px;fill:#989898;" text-anchor="middle" transform="translate(0,0)" y="341" opacity="1">Jun</text>
+								<text x="185.1" style="color:#666666;cursor:default;font-size:11px;fill:#989898;" text-anchor="middle" transform="translate(0,0)" y="341" opacity="1">Jul</text>
+								<text x="222" style="color:#666666;cursor:default;font-size:11px;fill:#989898;" text-anchor="middle" transform="translate(0,0)" y="341" opacity="1">Sep</text>
+								<text x="262" style="color:#666666;cursor:default;font-size:11px;fill:#989898;" text-anchor="middle" transform="translate(0,0)" y="341" opacity="1">Oct</text>
+								<text x="299" style="color:#666666;cursor:default;font-size:11px;fill:#989898;" text-anchor="middle" transform="translate(0,0)" y="341" opacity="1">Nov</text>
+							</g>
+							<g class="highcharts-axis-labels highcharts-yaxis-labels " data-z-index="7">
+								<text x="70" style="color:#000;cursor:default;font-size:11px;fill:#989898;" text-anchor="end" transform="translate(0,0)" y="316" opacity="1">0</text>
+								<text x="79" style="color:#000;cursor:default;font-size:11px;fill:#989898;" text-anchor="end" transform="translate(0,0)" y="260" opacity="1">100</text>
+								<text x="79" style="color:#000;cursor:default;font-size:11px;fill:#989898;" text-anchor="end" transform="translate(0,0)" y="216" opacity="1">500</text>
+							</g>
+						</svg>
+						</svg>
+						</div>
+						</div>
+					</article>
+				</article>
+				<article class="goal">
+					<div class="goal__header">
+						<span class="goal__title">	GOAL : REVENUE</span>
+						<button type="submit" class="goal__icon"></button>
+					</div>
+					<hr class="border" align="center" width="100%" size="0.5"/>
+					<div class="diagramm">
+						<span class="diagramm__text">41%</span>
+					</div>
+					<div class="goal__text1">
+						<span class="text1">+4,7% this month</span><br>
+						<span class="text1">240 days remained</span>
+					</div>
+					<div class="goal__text2">
+						<span id="circle1"></span>
+						<span class="text2" >expenses</span><br>
+						<span id="circle2"></span>
+						<span class="text2">profit</span>
+					</div>
+				</article>
+				<article class="sales2">
+					<input value="August 2018"  data-date-format="MM.YYYY"  type="month" name="duedate"  class="form__control" id="date" name="date" placeholder="Дата" required >
+					<input type="checkbox" id="payt4"/><label for="payt4"></label>
+					<div class="sales2__title1">
+						Sales
+					</div>
+					<div class="sales2__histogramm"></div>
+					<span class="sales2__text1">13 October</span>
+					<span class="sales2__text2">13 November</span>
+					<input type="checkbox" id="payt3"/><label for="payt3"></label>
+				</article>
+			</section>
+		</main>
+		<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.js" type="text/javascript"></script> -->
+		<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+		<script src="script.js" type="text/javascript"></script>
+		<!-- <script src="daterangepicker/moment.js"></script>
+		<script src="daterangepicker/daterangepicker.js"></script> -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="js/main.js" type="text/javascript"></script> <!-- Gem jQuery -->
+	</body>
+</html>
+
+
+
+
+
